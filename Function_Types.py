@@ -4,9 +4,11 @@
 # Built in function
 print("Hello Krushna !!! Future MAANG FAANG Developer ")
 name="Krish"
-lenght_of_name=len(name)
+lenght_of_name=len(name) #len() function
 print("Length of your name is : ",lenght_of_name)
-print("Data type of your name is :",type(name))
+print("Data type of your name is :",type(name)) #type() function
 
+
+# Range Function
 for i in range(1,10,2):
   print(i)
