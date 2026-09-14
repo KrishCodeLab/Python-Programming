@@ -6,3 +6,6 @@ def USD_to_INR(usd):
 
 usd=int(input("Enter usd value "))
 print(USD_to_INR(usd))
+
+
+print("New file")
