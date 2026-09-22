@@ -1,0 +1,36 @@
+🟢 Basic
+Convert a string to uppercase using upper().
+Convert a string to lowercase using lower().
+Capitalize the first character using capitalize().
+Convert the first character of every word to uppercase using title().
+Remove leading and trailing spaces using strip().
+🟡 Searching & Checking
+Find the position of "python" using find().
+Count occurrences of "a" using count().
+Check whether a string starts with "Hello" using startswith().
+Check whether a string ends with ".com" using endswith().
+Check whether a string contains only digits using isdigit().
+Check whether a string contains only alphabets using isalpha().
+Check whether a string contains only alphabets and numbers using isalnum().
+🟠 Replace & Split
+Replace all spaces with - using replace().
+Replace "Java" with "Python" using replace().
+Split a sentence into individual words using split().
+Count the number of words in a sentence using split() and len().
+Convert a list of words into a string using join().
+🔴 Challenge
+Count the number of vowels in a string.
+Count how many times a particular character occurs using count().
+Check whether a string is a palindrome.
+Remove all spaces from a string using replace().
+Find the longest word in a sentence.
+Count uppercase and lowercase characters using isupper() and islower().
+Remove duplicate/multiple spaces from a sentence using split() and join().
+Create a String Analyzer that displays:
+Original string
+Uppercase
+Lowercase
+Number of characters
+Number of words
+Number of vowels
+Number of spaces
