@@ -29,3 +29,4 @@ print("  Hello".lstrip())
 
 # rstrip() :- Removes only ending space of string
 print("Hello   ".rstrip())
+
