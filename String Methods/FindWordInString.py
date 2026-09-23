@@ -2,3 +2,7 @@
 Random_sentence=input("Enter Sentence")
 # find():- Returns the first index of word if the word exists in string else return -1
 print(Random_sentence.find("Python"))
+print(Random_sentence.lower().find("Python"))
+
+print(Random_sentence.find("a"))
+
