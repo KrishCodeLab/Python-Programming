@@ -1,4 +1,4 @@
-name=input()
-print(name.isalpha)
-phone=int(input())
+
+# Check Only Alphabets in string : -
+name=input("Enter name")
 print(name.isalpha())
