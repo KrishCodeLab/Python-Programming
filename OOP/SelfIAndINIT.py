@@ -3,7 +3,7 @@
 class student:
   name=""
   rollno=0
-# init : It is uded to give an object its iniitial infromation when the object is created
+# init : It is uded to give an object its iniitial infromation when the object is createdg
   def __init__(self,fullname,rollno):
     self.name=fullname
     self.rollno=rollno
