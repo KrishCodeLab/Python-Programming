@@ -16,7 +16,7 @@ class student:
   
   print("Welcome to the student dashboard")
 
-  def __init__(self,name,roll,marks):
+  def __init__(self,roll,marks,name="Unknown"):
     self.name=name
     self.roll=roll
     self.marks=marks
