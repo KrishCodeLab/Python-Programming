@@ -43,3 +43,16 @@ Basic: Variables and conditions.
 Functions: deposit(), withdraw(), check_balance().
 
 OOP: BankAccount class, multiple accounts, transaction history.
+
+
+Magic/Dunder methods
+__str__
+__len__
+__add__
+__eq__
+Composition
+Aggregation
+Exception handling
+Modules & packages
+Dataclasses
+SOLID principles — later
