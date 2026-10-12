@@ -16,14 +16,19 @@ class Student:
 
 
  def calculate_total(self,phy,che,math):
-    total=self.phy+self.che+self.math
-    return total   
+    self.total=self.phy+self.che+self.math
+    return self.total   
+
+ def calculate_percentage(self,phy,che,math):
+   self.total=self.calculate_total(phy,che,math)
+   self.percentage=self.total/3
+   return self.percentage
 
 
 
 s=Student("Krishna",14,90,99,99,20,"male","Alard University x Niat","AIML",1,"AIML","kruhna@gmail.com")
 
-print( s.calculate_total(90,99,99))
+print( s.calculate_percentage(90,99,99))
 
 
   
