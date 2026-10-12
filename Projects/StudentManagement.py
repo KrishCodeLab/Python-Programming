@@ -15,6 +15,11 @@ class Student:
     self.email=email
 
 
+def calculate_total(phy,che,math):
+    total=phy+che+math
+    return total   
+
+
 
 
 
