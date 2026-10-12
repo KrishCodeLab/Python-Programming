@@ -24,11 +24,25 @@ class Student:
    self.percentage=self.total/3
    return self.percentage
 
+ def calculate_grade(self,phy,che,math):
+   self.percentage=self.calculate_percentage(phy,che,math)
+   if self.percentage >100 or self.percentage <1:
+      print("Invalid Percentage!!!")
+   elif self.percentage >=90:
+      print("Grade A+")
+   elif self.percentage>=80:
+      print("Grade A")
+   elif self.percentage>=70:
+      print("Grade B")
+   elif self.percentage >=60:
+      print("Grade C")
+   else:
+      print("Grade D")
 
 
 s=Student("Krishna",14,90,99,99,20,"male","Alard University x Niat","AIML",1,"AIML","kruhna@gmail.com")
-
+print(s.calculate_total(90,99,99))
 print( s.calculate_percentage(90,99,99))
-
+s.calculate_grade(90,99,99)
 
   
