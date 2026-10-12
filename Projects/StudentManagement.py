@@ -15,12 +15,15 @@ class Student:
     self.email=email
 
 
-def calculate_total(phy,che,math):
-    total=phy+che+math
+ def calculate_total(self,phy,che,math):
+    total=self.phy+self.che+self.math
     return total   
 
 
 
+s=Student("Krishna",14,90,99,99,20,"male","Alard University x Niat","AIML",1,"AIML","kruhna@gmail.com")
+
+print( s.calculate_total(90,99,99))
 
 
   
