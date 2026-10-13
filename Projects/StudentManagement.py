@@ -39,10 +39,25 @@ class Student:
    else:
       print("Grade D")
 
+  # get result method
+ def display_student_details(self,phy,che,math):
+      print("=============================================================================================================================")
+      print("Student Name : ",self.name)
+      print("College Name : ",self.college_name)
+      self.percentage=self.calculate_percentage(phy,che,math)
+      print("The Percenatage of the student : ",self.percentage)
+      print("=============================================================================================================================")
+
+  # Goal: Return PASS if every subject has at least 35 marks; otherwise, return FAIL
+
+  # Display student information
+  # Display the name, roll number, subject marks, total, percentage, grade, and result
+
 
 s=Student("Krishna",14,90,99,99,20,"male","Alard University x Niat","AIML",1,"AIML","kruhna@gmail.com")
 print(s.calculate_total(90,99,99))
 print( s.calculate_percentage(90,99,99))
 s.calculate_grade(90,99,99)
+s.display_student_details(90,99,99)
 
   
