@@ -3,9 +3,9 @@ class Student:
  def __init__(self,name,rollno,phy,che,math,age,gender,college_name,department_name,semester_no,course_name,email):
     self.name=name
     self.rollno=rollno
-    self.__math=math
-    self.__phy=phy
-    self.__che=che
+    self.math=math
+    self.phy=phy
+    self.che=che
     self.age=age
     self.gender=gender
     self.college_name=college_name
@@ -21,8 +21,38 @@ class Student:
 
     if mark < 0 or mark >100:
        raise ValueError("Marks must be between 0 to 100 ")
-       
+
+# access the internal mark using self.phy -->getter
+ @property 
+ def phy(self):
+    return self.__phy
+
+# setter 
+ @phy.setter
+ def phy(self,value):
+    self.validate_mark(value)
+    self.__phy=value
+
  
+ @property
+ def che(self):
+    return self.__che
+
+ @che.setter
+ def che(self, value):
+    self.validate_mark(value)
+    self.__che = value
+
+
+ @property
+ def math(self):
+    return self.__math
+
+ @math.setter
+ def math(self, value):
+    self.validate_mark(value)
+    self.__math = value
+
  
 
  def calculate_total(self):
@@ -84,5 +114,5 @@ print(s.calculate_total())
 print( s.calculate_percentage())
 s.calculate_grade()
 # s.display_student_details(90,99,99)
-
-  
+print(s.phy)
+# s.phy=-10 -->Raise ValueError
