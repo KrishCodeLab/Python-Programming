@@ -10,4 +10,4 @@ print((10, 20) == (10, 20))
 print((10, 20) < (10, 30))
 
 # Compares first element if it is not same return true or false immediatly
-print((5, 100) < (6, 1))
+print((5, 100) < (6, 1)) # This is called lexicographical comparison.
