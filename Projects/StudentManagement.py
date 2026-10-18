@@ -129,7 +129,9 @@ class StudentResultManager:
    def __init__(self):
       # Manage multiple Student objects
       self.students=[]
- 
+
+   def add_Student(self,student):
+      self.students.append(student)
 
 
 s=Student("Krishna",14,90,99,99,20,"male","Alard University x Niat","AIML",1,"AIML","kruhna@gmail.com")
