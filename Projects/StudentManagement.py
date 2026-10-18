@@ -90,6 +90,21 @@ class Student:
    else:
       print("Student must have atleast 35 marks in each subject")
 
+
+ @classmethod
+ def from_percentage(
+        cls, name, rollno,percentage, age, gender,
+    college_name, department_name, semester_no,
+    course_name, email
+    ):
+        # Assume all three subjects have equal marks
+        return cls(
+            name, rollno,
+            percentage,percentage,percentage,
+            age, gender, college_name, department_name,
+            semester_no, course_name, email
+        )
+
   # get result method
  def display_student_details(self):
        # Display the name, roll number, subject marks, total, percentage, grade, and result
@@ -116,3 +131,11 @@ s.calculate_grade()
 # s.display_student_details(90,99,99)
 print(s.phy)
 # s.phy=-10 -->Raise ValueError
+
+s2=Student.from_percentage("Govardhane",14,94,20,"male","Alard University x Niat","CSE AI",1,"CSE","Govardhane@gmail.com")
+print(s2.name)
+s2.calculate_grade()
+print(s2.calculate_percentage())
+print(s2.phy)
+print(s2.che)
+print(s2.math)
