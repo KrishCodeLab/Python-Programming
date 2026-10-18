@@ -133,6 +133,12 @@ class StudentResultManager:
    def add_Student(self,student):
       self.students.append(student)
 
+   def display_all(self):
+      for i in self.students:
+         print(i.name)
+         print(i.calculate_percentage())
+         print("=========================")
+
 
 s=Student("Krishna",14,90,99,99,20,"male","Alard University x Niat","AIML",1,"AIML","kruhna@gmail.com")
 print(s.calculate_total())
@@ -169,3 +175,12 @@ print(s3.college_name)
 print(s3.calculate_percentage())
 print(s3.calculate_total())
 s3.calculate_grade()
+print("=============================================================================================================================")
+
+# Create manager and register students
+manager = StudentResultManager()
+
+manager.add_Student(s)
+manager.add_Student(s2)
+manager.add_Student(s3)
+manager.display_all()
