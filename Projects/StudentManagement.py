@@ -1,8 +1,13 @@
-class Student:
+class Person:
+   def __init__(self,name,rollno):
+      self.name=name
+      self.rollno=rollno
+
+
+class Student(Person):
 
  def __init__(self,name,rollno,phy,che,math,age,gender,college_name,department_name,semester_no,course_name,email):
-    self.name=name
-    self.rollno=rollno
+    super().__init__(name,rollno)
     self.math=math
     self.phy=phy
     self.che=che
@@ -132,6 +137,8 @@ s.calculate_grade()
 print(s.phy)
 # s.phy=-10 -->Raise ValueError
 
+print("=============================================================================================================================")
+
 s2=Student.from_percentage("Govardhane",14,94,20,"male","Alard University x Niat","CSE AI",1,"CSE","Govardhane@gmail.com")
 print(s2.name)
 s2.calculate_grade()
@@ -139,3 +146,19 @@ print(s2.calculate_percentage())
 print(s2.phy)
 print(s2.che)
 print(s2.math)
+
+print("=============================================================================================================================")
+
+s3 = Student(
+    "Rahul", 25, 85, 78, 92, 21, "Male",
+    "Pune University", "CSE", 2,
+    "Computer Science", "rahul@gmail.com"
+)
+
+print(s3.name)
+print(s3.rollno)
+print(s3.phy)
+print(s3.che)
+print(s3.math)
+print(s3.college_name)
+print(s3.calculate_percentage())
