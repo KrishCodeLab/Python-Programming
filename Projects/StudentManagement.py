@@ -125,7 +125,10 @@ class Student(Person):
 
   # Goal: Return PASS if every subject has at least 35 marks; otherwise, return FAIL
 
-  
+class StudentResultManager:
+   def __init__(self):
+      # Manage multiple Student objects
+      self.students=[]
  
 
 
