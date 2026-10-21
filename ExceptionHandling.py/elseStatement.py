@@ -8,3 +8,16 @@ except ZeroDivisionError:
 else:
   print("hello")
   print(result)
+
+
+
+# if loop terminate by break still else block will print
+try:
+  for i in range(11):
+    print(i)
+    if i==5:
+      break
+except ValueError:
+  print("ValueError Happens")
+else:
+  print("Sorry !!!")
