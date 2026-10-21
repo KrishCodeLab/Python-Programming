@@ -11,3 +11,12 @@ try:
   print(number/0)
 except ZeroDivisionError:
   print("Number cannot be divided by zero")
+
+
+try:
+  num=int(input("Enter a number"))
+  string=input("Enter a string")
+  result=num+string
+except TypeError:
+  print("You can't add number into string")
+
