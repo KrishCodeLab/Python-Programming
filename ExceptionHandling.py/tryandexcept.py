@@ -20,3 +20,9 @@ try:
 except TypeError:
   print("You can't add number into string")
 
+try:
+    age = int("hello")
+    print(age)
+
+except ValueError:
+    print("Invalid value! Enter a number.")
