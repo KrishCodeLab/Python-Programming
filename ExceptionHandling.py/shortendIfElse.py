@@ -16,3 +16,8 @@ num = 10
 result = "Even" if num % 2 == 0 else "Odd"
 
 print(result)
+
+
+age = 20
+status = "Eligible" if age >= 18 else "Not eligible"
+print(status)
