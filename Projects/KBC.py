@@ -15,27 +15,40 @@ print("Welcome to Kaun Banega Crorepati!")
 # Taking user name and printing start game message
 name=input("What's your good name ? ")
 print(f"Welcome {name} let's start game !!! ")
-Amount=0
+amount=0
 
 Quiz={
   "question":"What is financial capital of india ?",
   "Options":["Delhi","Bengloare","Pune","Mumbai"],
-  "answer":"Mumbai",
+  "answer":"D",
   "amount":100000
 }
 
 print(Quiz["question"])
-string="ABCD"
+option_list="ABCD"
 
 # Printing Options
 # Why Enumerate ? Enumerate enumerate() is a Python built-in function that gives you two things while iterating:
 # 1. Index – Position of an element.
 # 2. Value – Actual element.
 for i, option in enumerate(Quiz["Options"]):
-    print(f"{string[i]} : {option}")
+    print(f"{option_list[i]} : {option}")
 
-anwser=input("Enter your answer")
-if Quiz["answer"]==anwser:
-  print("Good Go To Next")
-  Amount=Amount+int(Quiz["amount"])
-print("Yow won ",Amount)
+anwser=input("Enter Option (A/B/C/D)").upper()
+if anwser not in  option_list:
+   print("Invalid Answer")
+
+elif anwser==Quiz["answer"]:
+   print("Correct Answer!")
+   amount += Quiz["amount"]
+   print(f"You won Rs. {amount}")
+else:
+   print("Incorrect Answer")
+   print("Game is over")
+  #  print(f"You won Rs. {amount}")
+
+
+# Final result
+print("\n================================")
+print(f"Your final winning amount: Rs. {amount}")
+print("================================")
