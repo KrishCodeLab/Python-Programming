@@ -26,8 +26,13 @@ Quiz={
 
 print(Quiz["question"])
 string="ABCD"
-for i in string:
-  print(f"{i} : {Quiz["Options"]}")
+
+# Printing Options
+# Why Enumerate ? Enumerate enumerate() is a Python built-in function that gives you two things while iterating:
+# 1. Index – Position of an element.
+# 2. Value – Actual element.
+for i, option in enumerate(Quiz["Options"]):
+    print(f"{string[i]} : {option}")
 
 anwser=input("Enter your answer")
 if Quiz["answer"]==anwser:
