@@ -638,7 +638,7 @@ option_list="ABCD"
 # Why Enumerate ? Enumerate enumerate() is a Python built-in function that gives you two things while iterating:
 # 1. Index – Position of an element.
 # 2. Value – Actual element.
-for i, option in enumerate(Quiz["Options"]):
+for i, option in enumerate(choice["options"]):
     print(f"{option_list[i]} : {option}")
 
 anwser=input("Enter Option (A/B/C/D)").upper()
