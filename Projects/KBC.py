@@ -655,8 +655,12 @@ for i in range(1,10+1):
   else:
      print("Incorrect Answer")
      print("Game is over")
+     print(f"The correct Answer is {choice['answer']}")
      break
-
+  take_decision=input("Next-->Enter Any Key / Quit-->Q").upper()
+  if take_decision=="Q":
+     break
+  
    
 
 
