@@ -630,32 +630,38 @@ questions = [
 ]
 
 # print(Quiz["question"])
-choice=random.choice(questions)
-print(choice['question'])
-option_list="ABCD"
+
+for i in range(1,10+1):
+  print(f"You Won {amount}")
+  choice=random.choice(questions)
+  print(choice['question'])
+  option_list="ABCD"
 
 # Printing Options
 # Why Enumerate ? Enumerate enumerate() is a Python built-in function that gives you two things while iterating:
 # 1. Index – Position of an element.
 # 2. Value – Actual element.
-for i, option in enumerate(choice["options"]):
-    print(f"{option_list[i]} : {option}")
+  for i, option in enumerate(choice["options"]):
+      print(f"{option_list[i]} : {option}")
 
-anwser=input("Enter Option (A/B/C/D)").upper()
-if anwser not in  option_list:
-   print("Invalid Answer")
+  anwser=input("Enter Option (A/B/C/D)").upper()
+  if anwser not in  option_list:
+     print("Invalid Answer")
 
-elif anwser==Quiz["answer"]:
-   print("Correct Answer!")
-   amount += Quiz["amount"]
-   print(f"You won Rs. {amount}")
-else:
-   print("Incorrect Answer")
-   print("Game is over")
-  #  print(f"You won Rs. {amount}")
+  elif anwser==choice["answer"]:
+     print("Correct Answer!")
+     amount += choice["amount"]
+     print(f"You won Rs. {amount}")
+  else:
+     print("Incorrect Answer")
+     print("Game is over")
+     break
+
+   
+
 
 
 # Final result
-print("\n================================")
+print("\================================")
 print(f"Your final winning amount: Rs. {amount}")
 print("================================")
