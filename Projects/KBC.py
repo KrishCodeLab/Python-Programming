@@ -16,6 +16,10 @@ print("Welcome to Kaun Banega Crorepati!")
 name=input("What's your good name ? ")
 print(f"Welcome {name} let's start game !!! ")
 amount=0
+phone=input("Enter your phone number : ")
+email=input("Enter your email id : ")
+bank_account=input("Enter bank account number : ")
+
 
 # Store Questions using Dictionary
 # Quiz={
@@ -667,5 +671,18 @@ for i in range(1,10+1):
 
 # Final result
 print("\================================")
+print(f"Mr/Mrs {name} congratulations !!! ")
 print(f"Your final winning amount: Rs. {amount}")
 print("================================")
+
+print("\================================")
+print(f"==========Check Details==========")
+print(f"Name: {name}")
+print(f"Email: {email}")
+print(f"Phone: {phone}")
+print(f"Bank Account: {bank_account}")
+
+
+
+print("================================")
+print("If there is any mistake in details contact with us")
