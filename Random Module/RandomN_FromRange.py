@@ -7,3 +7,4 @@ length=len(fruits)
 random_idx=random.randrange(length)
 # Printing the random item using random idx
 print(fruits[random_idx])
+
