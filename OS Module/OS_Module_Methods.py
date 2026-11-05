@@ -20,3 +20,10 @@ if os.path.exists("Java Remaning Question"):
   print("File Exits")
 else:
   print("File does not exits")
+
+
+# Specified Path : The r tells Python to treat backslashes literally.
+files = os.listdir(r"C:\Users\Krushana\OneDrive\Desktop")
+print(files)
+
+
