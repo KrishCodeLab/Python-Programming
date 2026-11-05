@@ -10,3 +10,8 @@ print(current_working_dir)
 folder_list=os.listdir()
 print(folder_list)
 
+# os.mkdir() : Create nested directory and Returns nothing 
+# imp : Once You Create Directory you can't create duplicate Directory with same name
+os.mkdir("Java Remaning Question")
+print(folder_list)
+
