@@ -29,6 +29,11 @@ size_of_file=os.path.getsize(path)
 print(f"File size : {size_of_file} bytes")
 
 # os.path.basename(path)
-path="data.txt"
-base_file_name=os.path.basename(r"C:\Users\Krushana\OneDrive\Desktop\Python Programming")
+
+base_file_name=os.path.basename(r"C:\Users\Krushana\OneDrive\Desktop\Python Programming\data.txt")
 print("Current Working File :",base_file_name)
+
+# os.path.dirname() : Returns the parent directory 
+path=r"C:\Users\Krushana\OneDrive\Desktop\Python Programming"
+parent_folder=os.path.dirname(path)
+print("Parent of Python Programmign folder is :",parent_folder)
