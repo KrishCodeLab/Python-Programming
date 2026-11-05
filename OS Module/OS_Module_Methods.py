@@ -12,6 +12,11 @@ print(folder_list)
 
 # os.mkdir() : Create nested directory and Returns nothing 
 # imp : Once You Create Directory you can't create duplicate Directory with same name
-os.mkdir("Java Remaning Question")
-print(folder_list)
+# os.mkdir("Java Remaning Question")
+# print(folder_list)
 
+# os.path.exists() : Checks wither given folder or file exists in os.
+if os.path.exists("Java Remaning Question"):
+  print("File Exits")
+else:
+  print("File does not exits")
