@@ -27,3 +27,8 @@ print(f"File size : {size_of_file} bytes")
 path="Area.py"
 size_of_file=os.path.getsize(path)
 print(f"File size : {size_of_file} bytes")
+
+# os.path.basename(path)
+path="data.txt"
+base_file_name=os.path.basename(r"C:\Users\Krushana\OneDrive\Desktop\Python Programming")
+print("Current Working File :",base_file_name)
