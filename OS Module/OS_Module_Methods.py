@@ -28,7 +28,7 @@ print(files)
 
 
 # os.mkdirs() : Creates multiple directories including parent directory
-os.makedirs("Krushna/Krushna_Govardhane/Krushna_Govardhane_Btech")
+os.makedirs("Krushna/Krushna_Govardhane/Krushna_Govardhane_Btech",exist_ok=True)
 folder_list=os.listdir()
 print(folder_list)
 
@@ -37,3 +37,12 @@ print(folder_list)
 # Parent must exist	Can     Create missing parents
 
 
+# os.rmdir() : Removes empty directory
+os.rmdir("Java Remaning Question")
+print(os.listdir())
+
+# os.removedirs() : Remove nested directory with parent directory . 
+os.makedirs("Python/Projects/OS_Module")
+print(os.listdir())
+os.removedirs("Python/Projects/OS_Module")
+print(os.listdir())
