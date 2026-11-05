@@ -27,3 +27,13 @@ files = os.listdir(r"C:\Users\Krushana\OneDrive\Desktop")
 print(files)
 
 
+# os.mkdirs() : Creates multiple directories including parent directory
+os.makedirs("Krushna/Krushna_Govardhane/Krushna_Govardhane_Btech")
+folder_list=os.listdir()
+print(folder_list)
+
+#    os.mkdir()             	   os.makedirs()
+# Creates one directory	    Creates nested directories
+# Parent must exist	Can     Create missing parents
+
+
