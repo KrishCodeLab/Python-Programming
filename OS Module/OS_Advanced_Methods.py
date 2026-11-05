@@ -17,5 +17,13 @@ else:
 
 # print(os.listdir())
 
-# 
+# os.path.getsize() : It Returns a size of file in bytes
+path="data.txt"
+size_of_file=os.path.getsize(path)
+# Empty file returns 0 bytes
+print(f"File size : {size_of_file} bytes")
 
+# File that contains data returns number
+path="Area.py"
+size_of_file=os.path.getsize(path)
+print(f"File size : {size_of_file} bytes")
