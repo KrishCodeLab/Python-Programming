@@ -56,3 +56,22 @@ print(result)
 file="Python.py"
 result=os.path.splitext(file)
 print(result)
+
+# os.path.abspath() – Get Absolute Path , Converts a relative path into an absolute path.
+file="Area.py"
+result=os.path.abspath(file)
+print(result)
+
+# Returns a timestamp.
+# os.path.getctime() – Get Creation/Metadata Change Time
+file="data.txt"
+creation=os.path.getctime(file)
+print(creation)
+
+# os.path.getmtime() : Get Modification time
+modification=os.path.getmtime(file)
+print(modification)
+
+# os.path.getatime() : Returns last access time
+last_access=os.path.getatime(file)
+print(last_access)
