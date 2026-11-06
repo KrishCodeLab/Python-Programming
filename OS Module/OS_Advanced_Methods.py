@@ -43,3 +43,11 @@ folder="Python"
 file="Basics.py"
 joined_path=os.path.join(folder,file)
 print(f"Joined path of {folder} and {file} is : {joined_path}") 
+
+# os.path.split() : Returns a tuple containing the parent directory and final component.
+
+path = r"C:\Users\Krish\Desktop\notes.txt"
+
+result = os.path.split(path)
+
+print(result)
