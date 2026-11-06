@@ -51,3 +51,8 @@ path = r"C:\Users\Krish\Desktop\notes.txt"
 result = os.path.split(path)
 
 print(result)
+
+# os.path.splitext() – Split Filename and Extension
+file="Python.py"
+result=os.path.splitext(file)
+print(result)
