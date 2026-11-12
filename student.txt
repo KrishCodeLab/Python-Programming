@@ -1,18 +1,2 @@
 Name: Krish
-Age: 20Role:AI Scientist
-Course: B.Tech CSE AI
-Role:AI Scientist
-Course: B.Tech CSE AI
-Role:AI Scientist
-Course: B.Tech CSE AI
-Role:AI Scientist
-Course: B.Tech CSE AI
-Role:AI Scientist
-Course: B.Tech CSE AI
-Role:AI Scientist
-Course: B.Tech CSE AI
-Role:AI Scientist
-Course: B.Tech CSE AI
-Role:AI Scientist
-Course: B.Tech CSE AI
-Role:AI Scientist
+नमस्ते
