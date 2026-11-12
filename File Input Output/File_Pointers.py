@@ -44,6 +44,16 @@ students = [
 
 with open("students.txt", "w") as file:
     file.writelines(students)
+# writelines() does not automatically insert newline characters.
 
 with open("students.txt","r") as file:
    print(file.read())
+
+# flush() : When Python writes data into a file, the data may initially be stored in a temporary memory buffer    instead of immediately being sent to the underlying file.
+with open("log.txt", "w") as file:
+
+    file.write("Application Started !!! ")
+
+    file.flush()
+
+    print("Data flushed successfully !!! ")
