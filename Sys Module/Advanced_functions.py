@@ -17,3 +17,17 @@ print("Name : ",Name)
 print("age : ",age)
 print("Role : ",role)
 
+# exit() : Sometimes you want to stop the program execution immediatly.
+print("The program is running ")
+
+print("The program is going to stop ")
+sys.exit()
+print("The program is stopped")
+# sys.exit() raises the SystemExit exception, which normally terminates the program.
+
+# using exit codes : 0 for successful execution and non zero value for error
+if age < 18:
+  print("Access denied !")
+  sys.exit(1)
+else:
+  print("Access Granted !")
