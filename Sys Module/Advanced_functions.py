@@ -21,13 +21,16 @@ print("Role : ",role)
 print("The program is running ")
 
 print("The program is going to stop ")
-sys.exit()
+# sys.exit()
 print("The program is stopped")
 # sys.exit() raises the SystemExit exception, which normally terminates the program.
 
 # using exit codes : 0 for successful execution and non zero value for error
-if age < 18:
+if int(age) < 18:
   print("Access denied !")
-  sys.exit(1)
+  # sys.exit(1)
 else:
   print("Access Granted !")
+
+  # sys.path : is a list of directories where Python searches for modules when you import them.
+  print(sys.path)
